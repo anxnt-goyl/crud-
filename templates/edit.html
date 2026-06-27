@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Edit Task</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<div class="card p-4 shadow">
+
+<h2>Edit Task</h2>
+
+<form action="/update/{{ index }}" method="POST">
+
+<input
+class="form-control mb-3"
+name="title"
+value="{{ task.title }}">
+
+<textarea
+class="form-control mb-3"
+name="description">{{ task.description }}</textarea>
+
+<select
+class="form-select mb-3"
+name="status">
+
+<option
+{% if task.status=="Pending" %}selected{% endif %}>
+Pending
+</option>
+
+<option
+{% if task.status=="Completed" %}selected{% endif %}>
+Completed
+</option>
+
+</select>
+
+<button class="btn btn-primary w-100">
+
+Update Task
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    max-width:900px;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+h1{
+    color:white;
+    font-weight:bold;
+}
+
+.table{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.btn{
+    border-radius:30px;
+}
+
+table td{
+    vertical-align:middle;
+}
